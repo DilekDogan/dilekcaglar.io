@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dilek Caglar</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="img/logo-cat.jpg" class="logo">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="">Potfolio</a></li>
+                    <li><a href="cv-2/index.html">About me</a></li>
+                    <li><a href="">Blog</a></li>
+                </ul>
+            </nav>
+            <img src="img/menu.png" class="menu-icon" onclick="togglemenu()">
+        </div>
+        <div class="row">
+            <div class="vl"></div>
+            <div class="col-1">
+                <h2> <span>Hello</span> <br> I'm Dilek</h2>
+                <p>FrontEnd Developer</p>
+            </div>
+            <div class="col-2">
+                <img src="img/header1.png" class="header">
+            </div>
+
+        </div>
+        <footer>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/dilek-caglar-418a39208/">  <img src="img/linkedin.png" alt="">
+            </a>
+            <a href=""> <img src="img/instagram-icon.png" alt="">
+            </a>
+            <a href=""> <img src="img/twitter-icon.png" alt="">
+            </a>
+        </div>
+    </footer>
+    </div>
+
+    <script>
+        var menuList = document.getElementById("menuList");
+        menuList.style.maxHeight ="0px";
+        function togglemenu(){
+            if( menuList.style.maxHeight =="0px")
+            {
+                menuList.style.maxHeight ="130px";
+            }
+            else{
+                menuList.style.maxHeight ="0px";
+            }
+        }
+    </script>
+</body>
+</html>
